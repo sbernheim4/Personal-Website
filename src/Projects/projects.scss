@@ -1,0 +1,49 @@
+.projects {
+    background: white;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 200px 100px 300px;
+        grid-template-areas: "project1 project2"
+                             "project1 project4"
+                             "project3 project4";
+
+        .project {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &--one {
+                grid-area: project1;
+                background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),  url('/images/budgeteer.png') top left no-repeat;
+                background-size: cover;
+            }
+
+            &--two {
+                grid-area: project2;
+                background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),  url('/images/weatherterm.png') top left no-repeat;
+                background-size: cover;
+            }
+
+            &--three {
+                grid-area: project3;
+                background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),  url('/images/m5systems.jpg') top left no-repeat;
+                background-size: cover;
+            }
+
+            &--four {
+                grid-area: project4;
+                background: linear-gradient( rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)),  url('/images/kinetic.jpg') left no-repeat;
+                background-size: cover;
+            }
+
+
+            h2 {
+                color: white;
+                text-align: center;
+
+            }
+        }
+    }
+}
